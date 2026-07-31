@@ -1,12 +1,12 @@
 #find the second largest element in a list
 def secondlargest(nums):
-    second_largest=0
     largest=0
-    for n in nums:
-        if n>largest:
-            second_largest=largest
-            largest=n
-        elif n>second_largest:
-            second_largest=n
-    return second_largest
-print(secondlargest([5,2,6,9]))
+    secondlargest=0
+    for i in nums:
+        if i>largest :
+            secondlargest=largest
+            largest=i
+        elif largest>i>secondlargest:
+            secondlargest=i
+    return secondlargest   
+print(secondlargest([10,10, 8, 9]))
